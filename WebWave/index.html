@@ -7,77 +7,66 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body class="font-sans-serif">
-    <div class="bg-cover bg-center bg-no-repeat h-screen flex flex-col" style="background-image: url('./assets/main.webp');">
-        
-        <!-- Overlay -->
-        <div class="w-full h-full bg-black bg-opacity-40 flex flex-col">
-
-            <!-- Header -->
-            <header class="w-full">
-                <nav class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
-                    
-                    <!-- Logo -->
-                    <div class="flex items-center space-x-2">
-                        <img src="./assets/logo.webp" alt="Logo" class="h-10">
-                    </div>
-
-                    <!-- Desktop Navigation -->
-                    <ul class="hidden md:flex space-x-8 uppercase text-sm font-medium text-white">
-                        <li><a href="#" class="hover:text-gray-300 transition">Home</a></li>
-                        <li><a href="#" class="hover:text-gray-300 transition">Offer</a></li>
-                        <li><a href="#" class="hover:text-gray-300 transition">Gallery</a></li>
-                        <li><a href="#" class="hover:text-gray-300 transition">Blog</a></li>
-                        <li><a href="#" class="hover:text-gray-300 transition">About Us</a></li>
-                        <li><a href="#" class="hover:text-gray-300 transition">Contact</a></li>
-                        <li>
-                            <a href="#" class="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">
-                                Sign Up
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- Mobile Menu Button -->
-                    <button id="menu-btn" class="md:hidden text-3xl text-white">
-                        &#9776;
-                    </button>
-                </nav>
-
-                <!-- Mobile Navigation (Hidden by Default) -->
-                <ul id="mobile-menu" class="hidden flex flex-col items-center space-y-6 py-6 md:hidden bg-black bg-opacity-80 text-white w-full">
-                    <li><a href="#" class="block hover:text-gray-300 transition">Home</a></li>
-                    <li><a href="#" class="block hover:text-gray-300 transition">Offer</a></li>
-                    <li><a href="#" class="block hover:text-gray-300 transition">Gallery</a></li>
-                    <li><a href="#" class="block hover:text-gray-300 transition">Blog</a></li>
-                    <li><a href="#" class="block hover:text-gray-300 transition">About Us</a></li>
-                    <li><a href="#" class="block hover:text-gray-300 transition">Contact</a></li>
-                    <li>
-                        <a href="#" class="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition duration-300">
-                            Sign Up
-                        </a>
-                    </li>
-                </ul>
-            </header>
-
-            <!-- Hero Content -->
-            <div class="flex flex-grow flex-col justify-center items-center text-center text-white px-4">
-                <p class="italic text-lg">Adventurers</p>
-                <h1 class="text-4xl md:text-5xl font-bold mt-2">Let yourself be impressed</h1>
-                <button class="mt-6 px-6 py-3 bg-white text-black rounded-full text-lg font-medium hover:bg-gray-300 transition">
-                    Sign Up
-                </button>
+    <!-- Update the main container div -->
+<div class="bg-cover bg-center bg-no-repeat min-h-screen h-50 flex flex-col" style="background-image: url('./asset/main.webp');">
+    <header class="w-full mt-5">
+        <nav class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+            
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="./asset/logo.webp" alt="Logo" class="h-[80px] w-auto">
             </div>
 
-        </div>
-    </div>
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-8 uppercase font-medium text-[#3d3f40] ">
+                <li><a href="#" class="text-lg font-semibold text-black hover:text-gray-300 transition">Home</a></li>
+                <li><a href="#" class="text-lg hover:text-gray-300 transition">Offer</a></li>
+                <li><a href="#" class="text-lg hover:text-gray-300 transition">Gallery</a></li>
+                <li><a href="#" class="text-lg hover:text-gray-300 transition">Blog</a></li>
+                <li><a href="#" class="text-lg hover:text-gray-300 transition">About Us</a></li>
+                <li><a href="#" class="text-lg hover:text-gray-300 transition">Contact</a></li>
+                <li>
+                    <a href="#" class="text-lg border border-[#3d3f40] py-3 px-15 rounded-full hover:bg-[#3d3f40] hover:text-white transition duration-300">
+                        Sign Up
+                    </a>
+                </li>
+            </ul>
 
-    <!-- Hero Section -->
-    <section class="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-4" style="background-image: url('./assets/main.webp');">
-        <p class="italic text-lg">Adventurers</p>
-        <h1 class="text-5xl md:text-6xl font-bold">Let yourself be impressed</h1>
-        <button class="mt-6 py-3 px-15 bg-white text-black font-semibold rounded-full shadow-md">SIGN UP</button>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-3xl text-white">
+                &#9776;
+            </button>
+        </nav>
+
+        <!-- Mobile Navigation (Hidden by Default) -->
+        <ul id="mobile-menu" class="hidden flex flex-col items-center space-y-6 py-6 md:hidden bg-black bg-opacity-80 text-white w-full">
+            <li><a href="#" class="block hover:text-gray-300 transition">Home</a></li>
+            <li><a href="#" class="block hover:text-gray-300 transition">Offer</a></li>
+            <li><a href="#" class="block hover:text-gray-300 transition">Gallery</a></li>
+            <li><a href="#" class="block hover:text-gray-300 transition">Blog</a></li>
+            <li><a href="#" class="block hover:text-gray-300 transition">About Us</a></li>
+            <li><a href="#" class="block hover:text-gray-300 transition">Contact</a></li>
+            <li>
+                <a href="#" class="text-[#3d3f40] font-bold px-6 py-2 rounded-full hover:bg-white hover:text-[#3d3f40] transition duration-300">
+                    Sign Up
+                </a>
+            </li>
+        </ul>
+    </header>
+
+          <!-- Hero Section -->
+    <section class="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-4">
+       <p class="italic text-3xl mb-5">Adventurers</p>
+       <h1 class="text-6xl mx-5 md:text-6xl font-bold">Let yourself be impressed</h1>
+       <button class="text-[#3d3f40] font-bold py-3 px-15 rounded-full hover:bg-[#3d3f40] hover:text-white transition duration-300 mt-6 bg-white cursor-pointer">
+        SIGN UP
+    </button>
     </section>
+    </div>
+            
+            
 
-    <section>
+       <section class="bg-white py-16">
         <div class="container mx-auto mb-16 max-w-3xl text-center">
             <h1 class="text-4xl md:text-5xl font-serif text-gray-800 mb-4">POWER OF IMPRESSIONS GUARANTEED</h1>
             <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-8">FEEL EXTREMELY</h2>
@@ -94,7 +83,7 @@
         <div class="max-w-5xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-16">
                 <div class="order-1 md:order-1">
-                    <img src="./assets/rock climbing.webp" alt="Rock Climbing" class="w-full h-full object-cover rounded-lg shadow-md">
+                    <img src="./asset/rock climbing.webp" alt="Rock Climbing" class="w-full h-full object-cover rounded-lg shadow-md">
                 </div>
                 <div class="order-2 md:order-2 flex flex-col justify-center items-center text-center">
                     <h2 class="text-[#79a690] font-semibold text-xl mb-4">ROCK CLIMBING</h2>
@@ -118,7 +107,7 @@
                     </button>
                 </div>
                 <div class="order-1 md:order-2">
-                    <img src="./assets/offroad.webp" alt="truck" class="w-full h-full object-cover rounded-lg shadow-md">
+                    <img src="./asset/offroad.webp" alt="truck" class="w-full h-full object-cover rounded-lg shadow-md">
                 </div>
             </div>
         </div>
