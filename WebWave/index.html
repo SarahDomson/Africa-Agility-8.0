@@ -7,7 +7,7 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body class="font-sans-serif">
-    <!-- Update the main container div -->
+    
 <div class="bg-cover bg-center bg-no-repeat min-h-screen h-50 flex flex-col" style="background-image: url('./asset/main.webp');">
     <header class="w-full mt-2">
         <nav class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
@@ -62,7 +62,7 @@
         SIGN UP
     </button>
     </section>
-    </div>
+</div>
             
             
 
@@ -113,54 +113,6 @@
         </div>
     </section>
 
-    <section class="mt-25">
-        <div class="container mx-auto max-w-6xl">
-            <!-- Gallery Header -->
-            <h2 class="text-4xl font-serif text-center text-gray-800 mb-10">GALLERY</h2>
-            
-            <!-- Gallery Grid Container -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <!-- Left Column - Large Image -->
-              <div class="h-full">
-                <img 
-                  src="./asset/Gallery_1.webp" 
-                  alt="Hiker overlooking clouds" 
-                  class="w-full h-full object-cover"
-                >
-              </div>
-              
-              <!-- Right Column - Split into rows -->
-              <div class="grid grid-rows-2 gap-4">
-                <!-- Top large image -->
-                <div>
-                  <img 
-                    src="./asset/Gallery_2.webp" 
-                    alt="Jeep on forest road" 
-                    class="w-full h-full object-cover"
-                  >
-                </div>
-                
-                <!-- Bottom row with two images -->
-                <div class="grid grid-cols-2 gap-4">
-                  <div>
-                    <img 
-                      src="./asset/Gallery_3.webp" 
-                      alt="Person crossing rocks" 
-                      class="w-full h-full object-cover"
-                    >
-                  </div>
-                  <div>
-                    <img 
-                      src="./asset/Gallery_4.webp" 
-                      alt="Hikers on mountain trail" 
-                      class="w-full h-full object-cover"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    </section>
     
     <section>
         <div class="flex items-center justify-center gap-[15px] py-6 bg-white mt-10 md:px-5">
@@ -197,3 +149,54 @@
     </footer>
 </body>
 </html>
+
+
+
+<section class="mt-25">
+    <div class="container mx-auto max-w-6xl">
+        <!-- Gallery Header -->
+        <h2 class="text-4xl font-serif text-center text-gray-800 mb-10">GALLERY</h2>
+        
+        <!-- Gallery Grid Container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <div class="h-full">
+            <img 
+              src="./asset/Gallery_1.webp" 
+              alt="Hiker overlooking clouds" 
+              class="w-full h-full object-cover"
+            >
+          </div>
+          
+          
+          <div class="grid grid-rows-2 gap-4">
+            
+            <div>
+              <img 
+                src="./asset/Gallery_2.webp" 
+                alt="Jeep on forest road" 
+                class="w-full h-full object-cover"
+              >
+            </div>
+            
+           
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <img 
+                  src="./asset/Gallery_3.webp" 
+                  alt="Person crossing rocks" 
+                  class="w-full h-full object-cover"
+                >
+              </div>
+              <div>
+                <img 
+                  src="./asset/Gallery_4.webp" 
+                  alt="Hikers on mountain trail" 
+                  class="w-full h-full object-cover"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
