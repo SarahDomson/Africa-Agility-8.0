@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Reviews</title>
+  <!-- You can use Tailwind CSS v2 or v3; here we're linking to v2.2.19 -->
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+  <div class="max-w-3xl mx-auto p-8">
+    
+    <!-- Page Title -->
+    <header class="mb-8 text-center">
+      <h1 class="text-4xl font-bold text-gray-800">Customer Reviews</h1>
+      <p class="mt-2 text-gray-600">Share your feedback and read what others have to say.</p>
+    </header>
+
+    <!-- Review Form -->
+    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-800">Submit Your Review</h2>
+      <form id="review-form" class="space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+        </div>
+
+        <div>
+          <label for="rating" class="block text-sm font-medium text-gray-700">Rating</label>
+          <select id="rating" name="rating" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+            <option value="1">Poor</option>
+            <option value="2">Fair</option>
+            <option value="3">Good</option>
+            <option value="4">Very Good</option>
+            <option value="5">Excellent</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="comment" class="block text-sm font-medium text-gray-700">Comment</label>
+          <textarea id="comment" name="comment" placeholder="Your review..." rows="4" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" required></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-md transition-colors duration-200">Submit Review</button>
+      </form>
+    </div>
+
+    <!-- Review Display Section -->
+    <section id="review-list" class="space-y-4">
+      <!-- Reviews will appear here -->
+    </section>
+    
+  </div>
+</body>
+</html>
+
