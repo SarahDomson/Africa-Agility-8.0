@@ -11,7 +11,7 @@
     <div class="relative min-h-screen">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
-            <img src="./asset/main.webp" alt="Mountain Lake" class="w-full h-full object-cover filter brightness-90" />
+            <img src="./asset/main.webp" alt="Mountain Lake" class="w-full h-[90vh] object-cover filter brightness-90" />
         </div>
 
         <!-- Content Container -->
@@ -78,20 +78,119 @@
         </div>
     </div>
 
-    <!-- JavaScript for Mobile Menu Toggle -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuButton = document.querySelector('button.text-white.focus\\:outline-none');
-            const mobileMenu = document.querySelector('.hidden.md\\:hidden.bg-black');
+    <section>
+
+        <div class="container mx-auto py-16 px-4 max-w-3xl text-center">
+            <!-- Main Headline -->
+            <h1 class="text-4xl md:text-5xl font-serif text-gray-800 mb-4">POWER OF IMPRESSIONS GUARANTEED</h1>
             
-            menuButton.addEventListener('click', function() {
-                if (mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.remove('hidden');
-                } else {
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-    </script>
+            <!-- Subheading -->
+            <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-8">FEEL EXTREMELY</h2>
+            
+            <!-- Paragraph Text -->
+            <p class="text-gray-700 mb-6 leading-relaxed">
+              Curabitur sit amet purus semper tortor tempor lacinia eu in tortor. Integer nisl risus, 
+              condimentum sed lacinia in, tincidunt eget mi. Praesent finibus mollis blandit. 
+              Suspendisse vulputate turpis et erat iaculis viverra.
+            </p>
+            
+            <!-- Italic Text -->
+            <p class="text-gray-600 italic">
+              Curabitur sit amet purus semper <span class="text-green-600">Tortor Tempor</span>
+            </p>
+          </div>
+
+        <div class="max-w-7xl mx-auto">
+            <!-- First Section: Rock Climbing -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+              <!-- Image Column -->
+              <div class="order-1 md:order-1">
+                <img src="./asset/rock climbing.webp" alt="Rock Climbing" class="w-full h-80 object-cover rounded-lg shadow-md">
+              </div>
+              
+              <!-- Content Column -->
+              <div class="order-2 md:order-2 flex flex-col justify-center items-center text-center">
+                <h2 class="text-green-500 font-semibold text-xl mb-4">ROCK CLIMBING</h2>
+                <p class="text-gray-700 mb-6 max-w-md">
+                  Curabitur sit amet purus semper tortor tempor lacinia eu in tortor. Integer nisl risus, condimentum sed lacinia in.
+                </p>
+                <button class="bg-green-400 hover:bg-green-500 text-white py-3 px-8 rounded-full transition duration-300">
+                  SIGN UP
+                </button>
+              </div>
+            </div>
+        
+            <!-- Second Section: Extreme Offroad -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Content Column -->
+              <div class="order-2 md:order-1 flex flex-col justify-center items-center text-center">
+                <h2 class="text-green-500 font-semibold text-xl mb-4">EXTREME OFFROAD</h2>
+                <p class="text-gray-700 mb-6 max-w-md">
+                  Curabitur sit amet purus semper tortor tempor lacinia eu in tortor. Integer nisl risus, condimentum sed lacinia in.
+                </p>
+                <button class="bg-green-400 hover:bg-green-500 text-white py-3 px-8 rounded-full transition duration-300">
+                  SIGN UP
+                </button>
+              </div>
+              
+              <!-- Image Column -->
+              <div class="order-1 md:order-2">
+                <img src="./asset/offroad.webp" alt="Extreme Offroad" class="w-full h-80 object-cover rounded-lg shadow-md">
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section>
+        <div class="max-w-5xl mx-auto py-10 px-4">
+            <h2 class="text-center text-3xl font-semibold mb-6">GALLERY</h2>
+    
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="md:col-span-2">
+                    <img src="./asset/Gallery_1.webp" alt="Image 1" class="w-full h-auto rounded-lg">
+                </div>
+                <div>
+                    <img src="./asset/Gallery_2.webp" alt="Image 2" class="w-full h-auto rounded-lg">
+                </div>
+                <div>
+                    <img src="./asset/Gallery_3.webp" alt="Image 3" class="w-full h-auto rounded-lg">
+                </div>
+                <div>
+                    <img src="./asset/Gallery_4.webp" alt="Image 4" class="w-full h-auto rounded-lg">
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+     <!-- CTA Section -->
+     <div class="text-center py-6 bg-white">
+        <p class="text-lg font-semibold text-gray-800">
+            Do you have questions? Suggestions? Write to us.
+        </p>
+        <button class="mt-3 px-6 py-2 bg-green-400 text-white rounded-full hover:bg-green-500 transition">
+            Contact
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-white text-center py-8">
+        <h3 class="font-semibold">Check us out:</h3>
+        <div class="flex justify-center space-x-4 my-4">
+            <a href="#" class="border border-white rounded-full p-2">
+                <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" class="w-6 h-6">
+            </a>
+            <a href="#" class="border border-white rounded-full p-2">
+                <img src="https://cdn-icons-png.flaticon.com/24/1384/1384060.png" alt="YouTube" class="w-6 h-6">
+            </a>
+            <a href="#" class="border border-white rounded-full p-2">
+                <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" class="w-6 h-6">
+            </a>
+        </div>
+        <p class="text-sm">
+            A website created in the <span class="text-green-400">WebWave</span> builder.
+        </p>
+    </footer>
 </body>
 </html>

@@ -8,28 +8,18 @@
 </head>
 
 <body class="bg-gray-100 font-sans">
- 
-    <div class="max-w-2xl mx-auto p-4">
-    
-    <!-- Header section -->
-      <header class="text-center mb-6">
-         <h1 class="text-3xl font-bold">Customer Reviews</h1>
-         <p class="text-gray-600">Share your feedback with us!</p>
-      </header>
-
-    <!-- Review submission form -->
-      <div class="bg-white p-6 rounded shadow mb-6">
-         <h2 class="text-xl font-bold mb-4">Write a Review</h2>
-      
-      <!-- Form with auto spacing between elements -->
-      <form id="review-form" class="space-y-4">
-        <!-- Name input -->
+  <div class="max-w-2xl mx-auto p-4">
+    <header class="text-center mb-4">
+      <h1 class="text-3xl font-bold">Customer Reviews</h1>
+      <p class="text-gray-600">Share your feedback with us!</p>
+    </header>
+    <div class="bg-white p-4 rounded shadow mb-4">
+      <h2 class="text-xl font-bold mb-2">Write a Review</h2>
+      <form id="review-form" class="space-y-2">
         <div>
           <label for="name" class="block mb-1">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full p-2 border rounded"required />
+          <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full p-2 border rounded" required />
         </div>
-
-        <!-- Rating dropdown -->
         <div>
           <label for="rating" class="block mb-1">Rating</label>
           <select id="rating" name="rating" class="w-full p-2 border rounded" required>
@@ -41,23 +31,15 @@
             <option value="1">Poor</option>
           </select>
         </div>
-
-        <!-- Comment textarea -->
         <div>
           <label for="comment" class="block mb-1">Your Review</label>
-          <textarea id="comment" name="comment" placeholder="Tell us what you think..." rows="4" class="w-full p-2 border rounded"required></textarea>
+          <textarea id="comment" name="comment" placeholder="Tell us what you think..." rows="4" class="w-full p-2 border rounded" required></textarea>
         </div>
-
-        <!-- Submit button -->
-        <button 
-          type="submit" 
-          class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Submit Review</button>
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Submit Review</button>
       </form>
     </div>
-    <section id="review-list" class="space-y-4">
-      <!-- Reviews will be added here by JavaScript -->
+    <section id="review-list" class="space-y-2">
     </section>
-    
   </div>
 </body>
 </html>
